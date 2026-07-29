@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS calculator_db;
+
+USE calculator_db;
+
+CREATE TABLE IF NOT EXISTS calculations (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    number1 DECIMAL(10,2) NOT NULL,
+    operation VARCHAR(10) NOT NULL,
+    number2 DECIMAL(10,2) NOT NULL,
+    result DECIMAL(10,2) NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
