@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-const API_URL = "http://54.85.22.118:5000";
+const API_URL = "http://16.176.229.156:5000";
 
 function App() {
   const [number1, setNumber1] = useState("");
